@@ -23,9 +23,9 @@ A classic **Tic Tac Toe** game built with JavaScript, HTML, and CSS as part of m
 ## 📁 Folder Structure
 tic-tac-toe/
 ├── sounds/
-    ├── background.mp3
-    ├──click.mp3
-    ├──win.mp3
+    |--/background.mp3
+    |--/click.mp3
+    |--/win.mp3
 ├── gamepage.html ("page where game will be played")
 ├── index.html  ("landing page that links to gamepage.html")
 ├── script.js 
