@@ -36,14 +36,60 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-image: url("bg.jpg"); */
-    background-size: cover;
+    background-color: var(--light-beige);
+}
+
+/* Logo grid */
+.logo {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 30px;
+}
+
+.logo span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.logo-cell {
+    font-size: 5vw; 
+    width: 10vw; 
+    height: 10vw; 
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness for Logo */
+@media (max-width: 768px) {
+    .logo-cell {
+        font-size: 8vw; 
+        width: 9vw; 
+        height: 9vw; 
+    }
+
+    .landing-container {
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-cell {
+        font-size: 6vw; 
+        width: 7.5vw; 
+        height: 7.5vw; 
+    }
 }
 
 /* Heading */
 h1 {
     color: var(--deep-mocha);
-    font-size: 2.5rem; /* Responsive font size */
+    font-size: 2.5rem; 
     margin-bottom: 20px;
 }
 
@@ -147,17 +193,17 @@ h1 {
 }
 
 .x-mark {
-    color: var(--deep-mocha); /* Deep Mocha or any color for X */
+    color: var(--deep-mocha); 
 }
 
 .o-mark {
-    color: var(--soft-red); /* Soft Dusty Red or any color for O */
+    color: var(--soft-red); 
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
+        font-size: 2rem; 
     }
 
     .content {
@@ -207,51 +253,4 @@ h1 {
     box-shadow: 4px 4px 15px var(--shadow-color);
     border-radius: 15px;
     padding: 20px; 
-}
-
-/* Logo grid */
-.logo {
-    display: flex;
-    gap: 15px; 
-    margin-bottom: 30px;
-}
-
-.logo span {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-}
-
-.logo-cell {
-    font-size: 5vw; 
-    width: 10vw; 
-    height: 10vw; 
-    background-color: var(--secondary-color);
-    color: var(--text-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsiveness for Logo */
-@media (max-width: 768px) {
-    .logo-cell {
-        font-size: 8vw; 
-        width: 9vw; 
-        height: 9vw; 
-    }
-
-    .landing-container {
-        padding: 15px; 
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-cell {
-        font-size: 6vw; 
-        width: 7.5vw; 
-        height: 7.5vw; 
-    }
 }
