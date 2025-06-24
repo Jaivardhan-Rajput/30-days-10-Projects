@@ -10,7 +10,7 @@ const backgroundSound = new Audio("sounds/background.mp3");
 backgroundSound.loop = true;
 backgroundSound.volume = 1; // sets volume to 100%
 
-// Start background music when the page loads or when user interacts
+// Start background music when when user interacts
 window.addEventListener("click", () => {
     if (backgroundSound.paused) {
         backgroundSound.play().catch(e => console.log("Autoplay prevented"));
@@ -24,8 +24,8 @@ const winCondition = [
     [0, 4, 8], [2, 4, 6],             // Diagonal wins
 ];
 
-let turn = true; // 'true' represents Player X's turn, 'false' represents Player O's turn
-let gameOver = false; // Flag to check if the game is over
+let turn = true; // 'true' --> X's turn, 'false' --> 'O's turn
+let gameOver = false; // check if the game is over
 
 // Adding event listener to each box for player moves
 gameBox.forEach((box) => {
@@ -49,7 +49,7 @@ gameBox.forEach((box) => {
 
         checkWinner(); // Check if there is a winner after each move
 
-        clickSound.currentTime = 0; // rewind to start
+        clickSound.currentTime = 0; 
         clickSound.play();
     });
 });
@@ -71,7 +71,7 @@ let checkWinner = () => {
     }
 
     // Check for a draw condition (if all boxes are filled and no winner)
-    let isDraw = [...gameBox].every(box => box.innerText !== "");
+let isDraw = [...gameBox].every(box => box.innerText !== "");
     if (isDraw) {
         gameResult.innerText = "It's a draw!";
         gameOver = true;
