@@ -1,0 +1,134 @@
+:root {
+    --bg-color: #E6F0FA;
+    --accent-color: #A9D6F2;
+    --primary-blue: #4F9FD3;
+    --heading-color: #1C3F60;
+    --text-color: #3F628C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    background-image: url("background.png");
+}
+
+.mainContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--heading-color);
+}
+
+.value-for-conversion input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.from, .to {
+    margin: 15px 0;
+    font-size: 18px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.from-container, .to-container {
+    display: flex;
+    align-items: center;
+    background: var(--accent-color);
+    padding: 8px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.exchange-icon {
+    transform: scaleX(-1) rotate(90deg);
+    margin: 10px 0;
+}
+
+.from-container img, .to-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.exchange-rate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--text-color);
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.btn {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #3B8BB2; /* Darker shade for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .mainContainer {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .exchange-rate {
+        font-size: 16px;
+    }
+}
