@@ -24,7 +24,7 @@ The goal is to sharpen my skills, build real-world projects, and learn in public
 4. [Weather Dashboard]()  
 5. [Password Generator]()  
 6. [To-Do List](./todo-list)  
-7. [Currency Converter](./CurrencyConvertor)  
+7. [Currency Converter](./CurrencyConverter)  
 8. [Form Validator]()  
 9. [Multi-Purpose Calculator]()
 
