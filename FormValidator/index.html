@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Validator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form action="">
+
+    <div>
+      <label for="fname">First name:</label>
+      <input type="text" name="fname" placeholder="First name" id="fname" />
+    </div>
+
+    <div>
+      <label for="lname">Last name:</label>
+      <input type="text" name="lname" placeholder="Last name" id="lname" />
+    </div>
+
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" name="age" placeholder="Age" id="age" min="1" max="120" />
+    </div>
+
+    <div>
+      <label>Gender:</label>
+      
+      <input type="radio" name="gender" id="male" value="Male" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="Female" />
+      <label for="female">Female</label>
+
+    </div>
+
+    <div>
+      <label for="pnumber">Phone Number:</label>
+      <input type="tel" name="pnumber" placeholder="Mobile or telephone no." id="pnumber" />
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="e-mail" placeholder="E-mail address" id="email" />
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Password" id="password" />
+    </div>
+
+    <div>
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" name="confirm-password" placeholder="Confirm Password" id="confirm-password" />
+    </div>
+
+    <div>
+      <input type="submit" value="Submit" id="submit" />
+    </div>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
