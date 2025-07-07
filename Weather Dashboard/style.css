@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(
+      160deg,
+      #a9d3f1 30%,
+      #F9F3EF 70%,
+      rgba(255, 128, 0, 0.207) 100%
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1B3C53;
+  font-family: "Red Hat Display", sans-serif;
+  }
+  
+  /* Header */
+  #header {
+    background-color: transparent;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+  }
+  
+  /* Search Bar */
+  #search {
+    text-align: center;
+    margin: 20px 0;
+  }
+  #search input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  #search button {
+    padding: 10px 16px;
+    margin-left: 8px;
+    background-color: #456882;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #search button:hover {
+    background-color: #1B3C53;
+  }
+  
+  /* Main Layout */
+  #main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* ========== Weather & Extra Info Container ========== */
+  .weather-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  /* Weather Card */
+  .weather-card {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  /* Top Section */
+  .top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .temp-icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+  }
+  .temp {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .condition-box h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .condition-box p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Weather Details */
+  .weather-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  .detail {
+    flex: 1 30%;
+    background: #fff .1;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.225);
+  }
+  .detail span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+  }
+  .detail strong {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* ========== Extra Weather Info ========== */
+  #extraWeather {
+    width: 20%;
+    background: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #extraWeather h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1B3C53;
+  }
+  .extraDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 15px;
+    color: #1B3C53;
+
+  }
+  .extraDetails span {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* ========== Weekly Forecast ========== */
+  #weeklyForecast {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #weeklyForecast h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #1B3C53;
+    display: flex;
+    justify-content: center;
+
+  }
+  #forecastGrid {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 16px;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .forecastDay {
+    flex: 0 0 140px;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #header{
+    font-size: large;
+
+    }
+    .weather-container {
+      flex-direction: column;
+    }
+  
+    .weather-card,
+    #extraWeather {
+        flex-direction: column;
+      width: 100%;
+    }
+  
+    .top-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .weather-details {
+      flex-direction: column;
+    }
+  
+    .detail {
+      width: 100%;
+    }
+  
+    #search input {
+      width: 180px;
+    }
+  
+    #forecastGrid {
+      flex-wrap: wrap;
+      overflow-x: auto;
+    }
+  
+    .forecastDay {
+      flex: 0 0 120px;
+    }
+  }
+  
