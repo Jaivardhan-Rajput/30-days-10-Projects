@@ -1,83 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: cursive;
-
+    box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     height: 6rem;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color:#780C28;
+    background-color: #780C28;
     color: #EAFAEA;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-main{
+main {
     margin-top: 3rem;
-    height: 20vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    padding: 1rem;
 }
-.options{
+
+.options {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-img:hover{
+.options img {
+    height: 160px;
+    width: 160px;
+    object-fit: contain;
     cursor: pointer;
 }
 
-.choice3 img {
-    height: 100px;
-    width: 100px;
+.options img.clicked {
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
 
-
-
-.gameDashboard{
+.gameDashboard {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-top: 5%;
-    column-gap: 30px;
+    text-align: center;
 }
 
-.gameDashboard span{
+.gameDashboard span {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
-.gameStatement{
-    margin-top: 5% ;
-    height: 20%;
+.gameStatement {
+    margin-top: 5%;
     width: 100%;
+    max-width: 90vw;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: auto;
+    background-color: burlywood;
 }
 
-.gameStatement button{
-    height: 4rem;
-    width: 15vw;
-    font-size: 20px;
-    background-color:#780C28;
+@media screen and (max-width: 768px) {
+    .options img {
+        height: 70px;
+        width: 70px;
+    }
 
-    border: none;
-    border-radius: 5px;
-    color: #EAFAEA;
-    
+    .gameDashboard span {
+        font-size: 1.4rem;
+    }
+
+    .gameStatement {
+        font-size: 1rem;
+    }
+
+    header {
+        font-size: 1.2rem;
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .options img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .gameDashboard span {
+        font-size: 1.2rem;
+    }
+
+    .gameStatement {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    header {
+        font-size: 1rem;
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    .options {
+        gap: 1rem;
+    }
 }
