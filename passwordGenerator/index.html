@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="password-generate">
+            <h1>
+                <span class="heading-p-1">Generate a </span>
+                <br>
+                <span class="heading-p-2">random password</span>
+            </h1>
+
+            <p class="advice">Never use an insecure password again.</p>
+
+            <div id="requirements">
+                <div>
+                <span>
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase letters</label>
+                </span>
+
+                <span>
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">Lowercase letters</label>
+                </span>
+
+                <span>
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Numerical numbers</label>
+                </span>
+                </div>
+                <div>
+                <span>
+                    <input type="checkbox" id="special-symbols">
+                    <label for="special-symbols">Special Symbols</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="words">
+                    <label for="words">Random words</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="include-all">
+                    <label for="include-all">Include all</label>
+                </span></div>
+            
+            </div>
+
+
+
+            <button onclick="generatePassword()" id="generate-btn">Generate passwords</button>
+        </div>
+        <div id="password-output">
+            <div id="password-1">Password 1</div>
+            <div id="password-2">Password 2</div>
+            <div id="password-3">Password 3</div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
