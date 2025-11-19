@@ -1,6 +1,6 @@
-# 🚀 30 Days, 10 Projects – Frontend Development Challenge
+# 🚀 Frontend Development
 
-Welcome to my 30-day frontend challenge! I'm building **10 mini projects** using **JavaScript, HTML, CSS**, and tools like **Tailwind CSS** and **Bootstrap**.
+I'm building **10 mini projects** using **JavaScript, HTML, CSS**, and tools like **Tailwind CSS** and **Bootstrap**.
 The goal is to sharpen my skills, build real-world projects, and learn in public.
 
 ---
